@@ -1,48 +1,162 @@
 [PrefixDeclaration]
 :		http://cui.unige.ch/citygml/2.0/
-dc:		http://purl.org/dc/elements/1.1/
-xs:		http://www.w3.org/2001/XMLSchema
-app:		http://www.opengis.net/citygml/appearance/2.0/
-dem:		http://www.opengis.net/citygml/relief/2.0/
-frn:		http://www.opengis.net/citygml/cityfurniture/2.0/
-gen:		http://www.opengis.net/citygml/generics/2.0/
-geo:		http://www.opengis.net/ont/geosparql#
-gml:		http://www.opengis.net/gml/
-grp:		http://www.opengis.net/citygml/cityobjectgroup/2.0/
+data:		http://mydata.example.org/
 owl:		http://www.w3.org/2002/07/owl#
-rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
-tex:		http://www.opengis.net/citygml/texturedsurface/2.0/
-tun:		http://www.opengis.net/citygml/tunnel/2.0/
-veg:		http://www.opengis.net/citygml/vegetation/2.0/
-wtr:		http://www.opengis.net/citygml/waterbody/2.0/
-www:		http://www.w3.org/2001/
-xml:		http://www.w3.org/XML/1998/namespace
-xsd:		http://www.w3.org/2001/XMLSchema#
-bldg:		http://www.opengis.net/citygml/building/2.0/
 brid:		http://www.opengis.net/citygml/bridge/2.0/
-core:		http://www.opengis.net/citygml/2.0/
-luse:		http://www.opengis.net/citygml/landuse/2.0/
-obda:		https://w3id.org/obda/vocabulary#
-rdfs:		http://www.w3.org/2000/01/rdf-schema#
+gml:		http://www.opengis.net/gml/
+xsd:		http://www.w3.org/2001/XMLSchema#
 skos:		http://www.w3.org/2004/02/skos/core#
-tran:		http://www.opengis.net/citygml/transportation/2.0/
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+voc:		http://vocabulary.example.org/
+tun:		http://www.opengis.net/citygml/tunnel/2.0/
+dem:		http://www.opengis.net/citygml/relief/2.0/
+geo:		http://www.opengis.net/ont/geosparql#
+gen:		http://www.opengis.net/citygml/generics/2.0/
 terms:		http://purl.org/dc/terms/
+www:		http://www.w3.org/2001/
+veg:		http://www.opengis.net/citygml/vegetation/2.0/
+tran:		http://www.opengis.net/citygml/transportation/2.0/
+app:		http://www.opengis.net/citygml/appearance/2.0/
+obda:		https://w3id.org/obda/vocabulary#
+frn:		http://www.opengis.net/citygml/cityfurniture/2.0/
+bldg:		http://www.opengis.net/citygml/building/2.0/
+grp:		http://www.opengis.net/citygml/cityobjectgroup/2.0/
+tex:		http://www.opengis.net/citygml/texturedsurface/2.0/
+luse:		http://www.opengis.net/citygml/landuse/2.0/
+core:		http://www.opengis.net/citygml/2.0/
+wtr:		http://www.opengis.net/citygml/waterbody/2.0/
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+dc:		http://purl.org/dc/elements/1.1/
+base:		http://cui.unige.ch/citygml/2.0/
 
 [MappingDeclaration] @collection [[
-mappingId	building
-target		:building/{id} a bldg:Building ; bldg:lod2Solid :solid/{lod2_solid_id} . 
-source		SELECT * FROM citydb.building
-
-mappingId	solid_geometry
-target		:solid/{id} a gml:Geometry ; geo:asWKT {solid_wkt}^^geo:wktLiteral . 
-source		SELECT id, ST_ASTEXT(solid_geometry) AS solid_wkt FROM citydb.surface_geometry WHERE solid_geometry IS NOT NULL
-
-mappingId	address
-target		:address/{id} a core:Address ; rdfs:label {street} . 
-source		SELECT * FROM citydb.address
-
-mappingId	building_address
-target		:building/{building_id} bldg:address :address/{address_id} . 
+mappingId	mapping-1163344555
+target		:building/{building_id} bldg:address :address/{address_id} .
 source		SELECT * FROM address_to_building
+
+mappingId	mapping-7194626
+target		:bridge/{id} brid:lod1Solid :solid/{id} .
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping-260690096
+target		:bridge/{"id"} brid:lod3MultiSurface :multisurface/{"lod3_multi_surface_id"} . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping-750558794
+target		:bridge/{"id"} brid:yearOfConstruction {"year_of_construction"}^^xsd:date . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--1567304728
+target		:bridge/{"id"} brid:isMovable {"is_movable"}^^xsd:decimal . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--88734569
+target		:address/{"id"} core:multiPoint <{"multi_point_wkt"}> . 
+source		SELECT v1."city" AS "city", v1."country" AS "country", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."house_number" AS "house_number", v1."id" AS "id", v1."multi_point" AS "multi_point", ST_ASTEXT(v1."multi_point") AS "multi_point_wkt", v1."po_box" AS "po_box", v1."state" AS "state", v1."street" AS "street", v1."xal_source" AS "xal_source", v1."zip_code" AS "zip_code"
+			FROM "address" v1
+
+mappingId	mapping--626457654
+target		:address/{"id"} rdfs:label {"street"}^^xsd:string .
+source		SELECT v1."city" AS "city", v1."country" AS "country", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."house_number" AS "house_number", v1."id" AS "id", v1."multi_point" AS "multi_point", ST_ASTEXT(v1."multi_point") AS "multi_point_wkt", v1."po_box" AS "po_box", v1."state" AS "state", v1."street" AS "street", v1."xal_source" AS "xal_source", v1."zip_code" AS "zip_code"
+			FROM "address" v1
+
+mappingId	mapping-671236594
+target		:breakline_relief/{"id"} a dem:BreaklineRelief . 
+source		SELECT v1."break_lines" AS "break_lines", v1."break_lines" AS "break_lines_geom", v1."id" AS "id", v1."objectclass_id" AS "objectclass_id", v1."ridge_or_valley_lines" AS "ridge_or_valley_lines"
+			FROM "breakline_relief" v1
+
+mappingId	mapping-164877224
+target		:bridge/{"id"} brid:yearOfDemolition {"year_of_demolition"}^^xsd:date . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--2049248215
+target		:bridge/{"id"} brid:usage {"usage"}^^xsd:string . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--2107975533
+target		:appearance/{"id"} rdfs:label {"name"}^^xsd:string . 
+source		SELECT v1."citymodel_id" AS "citymodel_id", v1."cityobject_id" AS "cityobject_id", v1."description" AS "description", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."id" AS "id", v1."name" AS "name", v1."name_codespace" AS "name_codespace", v1."theme" AS "theme"
+			FROM "appearance" v1
+
+mappingId	mapping-963610351
+target		:bridge/{"id"} brid:lod2Solid :solid/{"lod2_solid_id"} . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping-2138752960
+target		:address/{"id"} core:xalAddress {"xal_source"} . 
+source		SELECT v1."city" AS "city", v1."country" AS "country", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."house_number" AS "house_number", v1."id" AS "id", v1."multi_point" AS "multi_point", ST_ASTEXT(v1."multi_point") AS "multi_point_wkt", v1."po_box" AS "po_box", v1."state" AS "state", v1."street" AS "street", v1."xal_source" AS "xal_source", v1."zip_code" AS "zip_code"
+			FROM "address" v1
+
+mappingId	mapping-564462335
+target		:bridge/{"id"} brid:function {"function"}^^xsd:string .
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--1764005592
+target		:bridge/{"id"} brid:lod2MultiSurface :multisurface/{"lod2_multi_surface_id"} .
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--834291164
+target		:bridge/{"id"} brid:class {"class"}^^xsd:string . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--1044484790
+target		:bridge/{"id"} brid:lod3Solid :solid/{"lod3_solid_id"} . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--1017333268
+target		:bridge/{"id"} brid:lod4MultiSurface :multisurface/{"lod4_multi_surface_id"} .
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping-693332132
+target		:address/{"id"} a core:Address . 
+source		SELECT v1."city" AS "city", v1."country" AS "country", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."house_number" AS "house_number", v1."id" AS "id", v1."multi_point" AS "multi_point", ST_ASTEXT(v1."multi_point") AS "multi_point_wkt", v1."po_box" AS "po_box", v1."state" AS "state", v1."street" AS "street", v1."xal_source" AS "xal_source", v1."zip_code" AS "zip_code"
+			FROM "address" v1
+
+mappingId	mapping-746543877
+target		:bridge/{"id"} brid:lod1MultiSurface :multisurface/{"lod1_multi_surface_id"} . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping--603328617
+target		:bridge/{"id"} a brid:Bridge . 
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping-1448857649
+target		:bridge/{"id"} brid:lod4Solid :solid/{"lod4_solid_id"} .
+source		SELECT v1."bridge_parent_id" AS "bridge_parent_id", v1."bridge_root_id" AS "bridge_root_id", v1."class" AS "class", v1."class_codespace" AS "class_codespace", v1."function" AS "function", v1."function_codespace" AS "function_codespace", v1."id" AS "id", v1."is_movable" AS "is_movable", v1."lod1_multi_surface_id" AS "lod1_multi_surface_id", v1."lod1_solid_id" AS "lod1_solid_id", v1."lod1_terrain_intersection" AS "lod1_terrain_intersection", ST_ASTEXT(v1."lod1_terrain_intersection") AS "lod1_terrain_intersection_wkt", v1."lod2_multi_curve" AS "lod2_multi_curve", ST_ASTEXT(v1."lod2_multi_curve") AS "lod2_multi_curve_wkt", v1."lod2_multi_surface_id" AS "lod2_multi_surface_id", v1."lod2_solid_id" AS "lod2_solid_id", v1."lod2_terrain_intersection" AS "lod2_terrain_intersection", ST_ASTEXT(v1."lod2_terrain_intersection") AS "lod2_terrain_intersection_wkt", v1."lod3_multi_curve" AS "lod3_multi_curve", ST_ASTEXT(v1."lod3_multi_curve") AS "lod3_multi_curve_wkt", v1."lod3_multi_surface_id" AS "lod3_multi_surface_id", v1."lod3_solid_id" AS "lod3_solid_id", v1."lod3_terrain_intersection" AS "lod3_terrain_intersection", ST_ASTEXT(v1."lod3_terrain_intersection") AS "lod3_terrain_intersection_wkt", v1."lod4_multi_curve" AS "lod4_multi_curve", ST_ASTEXT(v1."lod4_multi_curve") AS "lod4_multi_curve_wkt", v1."lod4_multi_surface_id" AS "lod4_multi_surface_id", v1."lod4_solid_id" AS "lod4_solid_id", v1."lod4_terrain_intersection" AS "lod4_terrain_intersection", ST_ASTEXT(v1."lod4_terrain_intersection") AS "lod4_terrain_intersection_wkt", v1."objectclass_id" AS "objectclass_id", v1."usage" AS "usage", v1."usage_codespace" AS "usage_codespace", v1."year_of_construction" AS "year_of_construction", v1."year_of_demolition" AS "year_of_demolition"
+			FROM "bridge" v1
+
+mappingId	mapping-723687220
+target		:bridge/{"bridge_id"} brid:address :address/{"address_id"} . 
+source		SELECT v1."address_id" AS "address_id", v1."bridge_id" AS "bridge_id"
+			FROM "address_to_bridge" v1
+
+mappingId	mapping--1166337143
+target		:breakline_relief/{"id"} geo:asWKT {"break_lines_geom"}^^geo:wktLiteral . 
+source		SELECT v1."break_lines" AS "break_lines", v1."break_lines" AS "break_lines_geom", v1."id" AS "id", v1."objectclass_id" AS "objectclass_id", v1."ridge_or_valley_lines" AS "ridge_or_valley_lines"
+			FROM "breakline_relief" v1
+
+mappingId	mapping--978431816
+target		:appearance/{"id"} app:theme {"theme"}^^xsd:string . 
+source		SELECT v1."citymodel_id" AS "citymodel_id", v1."cityobject_id" AS "cityobject_id", v1."description" AS "description", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."id" AS "id", v1."name" AS "name", v1."name_codespace" AS "name_codespace", v1."theme" AS "theme"
+			FROM "appearance" v1
+
+mappingId	mapping--543872102
+target		:appearance/{"id"} a app:Appearance .
+source		SELECT v1."citymodel_id" AS "citymodel_id", v1."cityobject_id" AS "cityobject_id", v1."description" AS "description", v1."gmlid" AS "gmlid", v1."gmlid_codespace" AS "gmlid_codespace", v1."id" AS "id", v1."name" AS "name", v1."name_codespace" AS "name_codespace", v1."theme" AS "theme"
+			FROM "appearance" v1
 ]]
 
