@@ -15,6 +15,7 @@
      xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0/"
      xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0/"
      xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0/"
+     xmlns:voc="http://vocabulary.example.org/"
      xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0/"
      xmlns:www="http://www.w3.org/2001/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -22,6 +23,7 @@
      xmlns:bldg="http://www.opengis.net/citygml/building/2.0/"
      xmlns:brid="http://www.opengis.net/citygml/bridge/2.0/"
      xmlns:core="http://www.opengis.net/citygml/2.0/"
+     xmlns:data="http://mydata.example.org/"
      xmlns:luse="http://www.opengis.net/citygml/landuse/2.0/"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -38,10 +40,10 @@
 - manually adding missing gml: classes, properties, and axioms for the geometry profile of CityGML
 </rdfs:comment>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -49,1129 +51,1129 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/generalizesTo -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/generalizesTo"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/multiPoint -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/multiPoint"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/referencePoint -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/referencePoint"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/relativeGMLGeometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/relativeGMLGeometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/relativeToTerrain -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/relativeToTerrain"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/relativeToWater -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/relativeToWater"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/xalAddress -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/2.0/xalAddress"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/referencePoint -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/referencePoint"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/surfaceDataMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/surfaceDataMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/wrapMode -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/wrapMode"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/address -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/address"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/boundedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/boundedBy"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/bridgeRoomInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/bridgeRoomInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/consistsOfBridgePart -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/consistsOfBridgePart"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/interiorBridgeInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/interiorBridgeInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/interiorBridgeRoom -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/interiorBridgeRoom"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/interiorFurniture -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/interiorFurniture"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod1Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod1Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod1ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod1ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod1Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod1Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod1TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod1TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod2Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod2Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod2ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod2ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod2MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod2MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod2MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod2MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod2Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod2Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod2TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod2TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod3Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod3Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod3ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod3ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod3MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod3MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod3MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod3MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod3Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod3Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod3TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod3TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod4Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod4Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod4ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod4ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod4MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod4MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod4MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod4MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod4Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod4Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/lod4TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/lod4TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/opening -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/opening"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/outerBridgeConstruction -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/outerBridgeConstruction"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/outerBridgeInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/outerBridgeInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/address -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/address"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/boundedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/boundedBy"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/consistsOfBuildingPart -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/consistsOfBuildingPart"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/interiorBuildingInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/interiorBuildingInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/interiorFurniture -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/interiorFurniture"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/interiorRoom -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/interiorRoom"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod0FootPrint -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod0FootPrint"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod0RoofEdge -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod0RoofEdge"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod1Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod1Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod1TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod1TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod2Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod2Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod2ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod2ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod2MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod2MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod2MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod2MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod2Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod2Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod2TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod2TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod3Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod3Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod3ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod3ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod3MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod3MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod3MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod3MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod3Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod3Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod3TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod3TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod4Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod4Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod4ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod4ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod4MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod4MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod4MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod4MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod4Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod4Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/lod4TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/lod4TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/opening -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/opening"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/outerBuildingInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/outerBuildingInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/roomInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/building/2.0/roomInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod1Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod1Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod1ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod1ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod1TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod1TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod2Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod2Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod2ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod2ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod2TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod2TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod3Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod3Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod3ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod3ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod3TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod3TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod4Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod4Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod4ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod4ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/lod4TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/lod4TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/groupMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/groupMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/parent -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/parent"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod0Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod0Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod0ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod0ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod0TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod0TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod1Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod1Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod1ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod1ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod1TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod1TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod2Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod2Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod2ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod2ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod2TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod2TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod3Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod3Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod3ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod3ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod3TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod3TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod4Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod4Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod4ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod4ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/lod4TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/lod4TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/lod0MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/lod0MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/lod2MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/lod2MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/lod3MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/lod3MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/lod4MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/lod4MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/breaklines -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/breaklines"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/extent -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/extent"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/grid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/grid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/reliefComponent -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/reliefComponent"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/reliefPoints -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/reliefPoints"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/ridgeOrValleyLines -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/ridgeOrValleyLines"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/tin -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/tin"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/auxiliaryTrafficArea -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/auxiliaryTrafficArea"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/lod0Network -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/lod0Network"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/lod2MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/lod2MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/lod3MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/lod3MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/lod4MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/lod4MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/trafficArea -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/trafficArea"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/boundedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/boundedBy"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/consistsOfTunnelPart -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/consistsOfTunnelPart"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/hollowSpaceInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/hollowSpaceInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/interiorFurniture -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/interiorFurniture"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/interiorHollowSpace -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/interiorHollowSpace"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/interiorTunnelInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/interiorTunnelInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod1Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod1Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod1TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod1TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod2Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod2Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod2ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod2ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod2MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod2MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod2MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod2MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod2Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod2Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod2TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod2TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod3Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod3Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod3ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod3ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod3MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod3MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod3MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod3MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod3Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod3Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod3TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod3TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod4Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod4Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod4ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod4ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod4MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod4MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod4MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod4MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod4Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod4Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/lod4TerrainIntersection -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/lod4TerrainIntersection"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/opening -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/opening"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/outerTunnelInstallation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/outerTunnelInstallation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod1Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod1Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod1ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod1ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod1MultiSolid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod1MultiSolid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod2Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod2Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod2ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod2ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod2MultiSolid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod2MultiSolid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod2MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod2MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod3Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod3Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod3ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod3ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod3MultiSolid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod3MultiSolid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod3MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod3MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod4Geometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod4Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod4ImplicitRepresentation -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod4ImplicitRepresentation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod4MultiSolid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod4MultiSolid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/lod4MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/lod4MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/boundedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/boundedBy"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod0MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod0MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod0MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod0MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod1MultiCurve -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod1MultiCurve"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod1MultiSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod1MultiSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod1Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod1Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod2Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod2Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod2Surface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod2Surface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod3Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod3Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod3Surface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod3Surface"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod4Solid -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod4Solid"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/lod4Surface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/lod4Surface"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/baseSurface -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/baseSurface"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/curveMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/curveMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/element -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/element"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/exterior -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/exterior"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/geometryMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/geometryMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/interior -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/interior"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/patchOf -->
@@ -1180,31 +1182,31 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.opengis.net/gml/patches"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.opengis.net/gml/patches -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/patches"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/pointMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/pointMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/solidMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/solidMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/surfaceMember -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/surfaceMember"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/trianglePatchOf -->
@@ -1212,16 +1214,16 @@
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/trianglePatchOf">
         <owl:inverseOf rdf:resource="http://www.opengis.net/gml/trianglePatches"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.opengis.net/gml/trianglePatches -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/gml/trianglePatches"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -1229,133 +1231,133 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/creationDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/2.0/creationDate"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/externalReference -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/2.0/externalReference"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/libraryObject -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/2.0/libraryObject"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/mimeType -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/2.0/mimeType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/terminationDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/2.0/terminationDate"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/transformationMatrix -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/2.0/transformationMatrix"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/ambientIntensity -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/ambientIntensity"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/borderColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/borderColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/diffuseColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/diffuseColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/emissiveColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/emissiveColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/imageURI -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/imageURI"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/isFront -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/isFront"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/isSmooth -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/isSmooth"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/mimeType -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/mimeType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/orientation -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/orientation"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/preferWorldFile -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/preferWorldFile"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/shininess -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/shininess"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/specularColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/specularColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/target -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/target"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/textureCoordinates -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/textureCoordinates"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/textureType -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/textureType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/theme -->
@@ -1385,394 +1387,394 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/transparency -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/transparency"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/worldToTexture -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/appearance/2.0/worldToTexture"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/isMovable -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/isMovable"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/yearOfConstruction -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/yearOfConstruction"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/yearOfDemolition -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/bridge/2.0/yearOfDemolition"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/measuredHeight -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/measuredHeight"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/roofType -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/roofType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/storeyHeightsAboveGround -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/storeyHeightsAboveGround"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/storeyHeightsBelowGround -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/storeyHeightsBelowGround"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/storeysAboveGround -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/storeysAboveGround"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/storeysBelowGround -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/storeysBelowGround"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/yearOfConstruction -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/yearOfConstruction"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/yearOfDemolition -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/building/2.0/yearOfDemolition"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/value -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/generics/2.0/value"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/landuse/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/lod -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/relief/2.0/lod"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/ambientIntensity -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/ambientIntensity"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/diffuseColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/diffuseColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/emissiveColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/emissiveColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/repeat -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/repeat"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/shininess -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/shininess"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/specularColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/specularColor"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/textureCoordinates -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/textureCoordinates"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/textureMap -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/textureMap"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/textureType -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/textureType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/transparency -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/transparency"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/surfaceMaterial -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/surfaceMaterial"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/transportation/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/yearOfConstruction -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/yearOfConstruction"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/yearOfDemolition -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/tunnel/2.0/yearOfDemolition"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/averageHeight -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/averageHeight"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/crownDiameter -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/crownDiameter"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/height -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/height"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/species -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/species"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/trunkDiameter -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/trunkDiameter"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/vegetation/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/class -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/class"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/function -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/function"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/usage -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/usage"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/waterLevel -->
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/citygml/waterbody/2.0/waterLevel"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -1780,7 +1782,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/Address -->
@@ -1788,24 +1790,6 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/Address">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/AbstractFeatureType"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/_Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/xalAddress"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/xalAddress"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/multiPoint"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiPoint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/xalAddress"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/xalAddress"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of an _CityObject to its addresses. The Address element must either carry
 
 				a reference to an Address object or contain an Address object inline, but neither both nor none. </rdfs:comment>
@@ -1815,7 +1799,7 @@
 
 				gml:MultiPoint geometry) locating the entrance(s). </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/CityModel -->
@@ -1827,13 +1811,13 @@
 
 				to be features of a city model. All features are included as cityObjectMember. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/ExternalObjectReferenceType -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/ExternalObjectReferenceType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/ExternalReferenceType -->
@@ -1849,7 +1833,7 @@
 
 				ExternalObjectReference must be an URI, which contains an indication of the informationSystem.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/GeneralizationRelationType -->
@@ -1863,7 +1847,7 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/ImplicitGeometry -->
@@ -1875,18 +1859,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/referencePoint"/>
                 <owl:someValuesFrom rdf:resource="http://www.opengis.net/gml/Point"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/libraryObject"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/mimeType"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1936,37 +1908,37 @@
 
 				ImplicitGeometry object inline, but neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/RelativeToTerrainType -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/RelativeToTerrainType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/RelativeToWaterType -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/RelativeToWaterType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/TransformationMatrix2x2Type -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/TransformationMatrix2x2Type"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/TransformationMatrix3x4Type -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/TransformationMatrix3x4Type"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/TransformationMatrix4x4Type -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/TransformationMatrix4x4Type"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/_CityObject -->
@@ -1974,18 +1946,6 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/_CityObject">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/AbstractFeatureType"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/_Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/creationDate"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemadate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/externalReference"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ExternalReferenceType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/generalizesTo"/>
@@ -2004,12 +1964,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/RelativeToWaterType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/2.0/terminationDate"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemadate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing the abstract superclass of most CityGML features. Its purpose is to provide a creation and
 
 				a termination date as well as a reference to corresponding objects in other information systems. A generalization relation
@@ -2020,13 +1974,13 @@
 
 				feature.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/_GenericApplicationPropertyOfCityObject -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/_GenericApplicationPropertyOfCityObject"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/_Site -->
@@ -2039,7 +1993,7 @@
 
 				and relations, in particular an id, names, external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/cityObjectMember -->
@@ -2047,37 +2001,37 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/cityObjectMember">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/featureMember"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/doubleBetween0and1 -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/doubleBetween0and1List -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/doubleBetween0and1List"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/integerBetween0and4 -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/integerBetween0and4"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/2.0/xalAddress -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/2.0/xalAddress"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/ -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/Appearance -->
@@ -2100,49 +2054,25 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/Color -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/Color"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/ColorPlusOpacity -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/ColorPlusOpacity"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/GeoreferencedTexture -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/GeoreferencedTexture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/appearance/2.0/_Texture"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/orientation"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/TransformationMatrix2x2Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/preferWorldFile"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaboolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/referencePoint"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Point"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/target"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Specialization for georeferenced textures, i.e. textures using a planimetric projection. Such textures
 
 				contain an implicit parameterization (either stored within the image file, in an acompanying world file, or using the
@@ -2161,7 +2091,7 @@
 
 				parameterization. Only gml:MultiSurface or decendants of gml:AbstractSurfaceType are valid targets.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/ParameterizedTexture -->
@@ -2180,25 +2110,13 @@
 
 				parameterization either as set of texture coordinates or transformation matrix is given. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/TexCoordGen -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/TexCoordGen">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/appearance/2.0/_TextureParameterization"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/worldToTexture"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/worldToTexture"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Texture parameterization using a transformation matrix. The transformation matrix &quot;worldToTexture&quot; can be
 
 				used to derive texture coordinates from an object&apos;s location. This 3x4 matrix T computes the coordinates (s,t) from a
@@ -2211,25 +2129,13 @@
 
 				is not required to specify it per LinearRing. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/TexCoordList -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/TexCoordList">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/appearance/2.0/_TextureParameterization"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/textureCoordinates"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/textureCoordinates"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Texture parameterization using texture coordinates: Each gml:LinearRing that is part of the surface
 
 				requires a separate &quot;textureCoordinates&quot;-entry with 2 doubles per ring vertex. The &quot;ring&quot;- attribute provides the gml:id
@@ -2240,7 +2146,7 @@
 
 				georeferenced textures instead. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/TextureAssociationType -->
@@ -2252,80 +2158,32 @@
 
 				_TextureParameterization object inline, but neither both nor none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/TextureTypeType -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/TextureTypeType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/WrapModeType -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/WrapModeType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/X3DMaterial -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/X3DMaterial">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/appearance/2.0/_SurfaceData"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/ambientIntensity"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/diffuseColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/emissiveColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/isSmooth"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaboolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/shininess"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/specularColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/target"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/transparency"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Class for defining constant surface properties. It is based on X3D&apos;s material definition. In addition,
 
 				&quot;isSmooth&quot; provides a hint for value interpolation. The link to surface geometry is established via the &quot;target&quot;-property.
 
 				Only gml:MultiSurface or decendants of gml:AbstractSurfaceType are valid targets. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/_SurfaceData -->
@@ -2333,12 +2191,6 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/_SurfaceData">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/AbstractFeatureType"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/_Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/isFront"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaboolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Base class for textures and material. Contains only isFront-flag.</rdfs:comment>
         <rdfs:comment>Denotes the relation of an Appearance to its surface data. The _SurfaceData element must either
 
@@ -2346,56 +2198,20 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/_Texture -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/_Texture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/appearance/2.0/_SurfaceData"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/imageURI"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/borderColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/ColorPlusOpacity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/imageURI"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/mimeType"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/textureType"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/TextureTypeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/appearance/2.0/wrapMode"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/appearance/2.0/WrapModeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Base class for textures. &quot;imageURI&quot; can contain any valid URI from references to a local file to
 
 				preformatted web service requests. The linking to geometry and texture parameterization is provided by derived
 
 				classes.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/_TextureParameterization -->
@@ -2409,7 +2225,7 @@
 
 				transformation matrix are available. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/appearance -->
@@ -2417,7 +2233,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/appearance">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_GenericApplicationPropertyOfCityObject"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/appearance/2.0/appearanceMember -->
@@ -2425,7 +2241,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/appearance/2.0/appearanceMember">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/featureMember"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/Bridge -->
@@ -2433,7 +2249,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/Bridge">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_AbstractBridge"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/BridgeConstructionElement -->
@@ -2444,18 +2260,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2530,12 +2334,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A BridgeConstructionElement is a part of a Bridge which has not the significance of a BridgePart. In
 
 				contrast to BridgeInstallation, a BridgeConstructionElement is essential from a structural point of view. Examples are
@@ -2549,25 +2347,13 @@
 
 				contain a BridgeConstructionElement object inline, but neither both nor none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/BridgeFurniture -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/BridgeFurniture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/lod4Geometry"/>
@@ -2578,12 +2364,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/lod4ImplicitRepresentation"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of a BridgeRoom to its interior bridge furniture. The
@@ -2597,7 +2377,7 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/BridgeInstallation -->
@@ -2608,18 +2388,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2658,12 +2426,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A BridgeInstallation is a part of a Bridge which has not the significance of a BridgePart. In contrast to
 
 				BridgeConstructionElements, a BridgeInstallation is not essential from a structural point of view. Thus, it may be removed
@@ -2679,7 +2441,7 @@
 
 				neither both nor none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/BridgePart -->
@@ -2692,7 +2454,7 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/BridgeRoom -->
@@ -2713,18 +2475,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/interiorFurniture"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/BridgeFurniture"/>
             </owl:Restriction>
@@ -2739,12 +2489,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/lod4Solid"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A BridgeRoom is a thematic object for modelling the closed parts inside a Bridge. It has to be closed, if
@@ -2766,7 +2510,7 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/CeilingSurface -->
@@ -2774,7 +2518,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/CeilingSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/ClosureSurface -->
@@ -2782,7 +2526,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/ClosureSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/Door -->
@@ -2801,7 +2545,7 @@
 
 				generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/FloorSurface -->
@@ -2809,7 +2553,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/FloorSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/GroundSurface -->
@@ -2817,7 +2561,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/GroundSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/IntBridgeInstallation -->
@@ -2832,18 +2576,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/lod4Geometry"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Geometry"/>
             </owl:Restriction>
@@ -2852,12 +2584,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/lod4ImplicitRepresentation"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>An IntBridgeInstallation is an interior part of a Bridge which has a specific function or semantic
@@ -2873,7 +2599,7 @@
 
 				IntBridgeInstallation object inline, but neither both nor none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/InteriorWallSurface -->
@@ -2881,7 +2607,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/InteriorWallSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/OuterCeilingSurface -->
@@ -2889,7 +2615,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/OuterCeilingSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/OuterFloorSurface -->
@@ -2897,7 +2623,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/OuterFloorSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/RoofSurface -->
@@ -2905,7 +2631,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/RoofSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/WallSurface -->
@@ -2913,7 +2639,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/bridge/2.0/WallSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/Window -->
@@ -2926,7 +2652,7 @@
 
 				generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/_AbstractBridge -->
@@ -2935,32 +2661,14 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_Site"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/address"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/Address"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/consistsOfBridgePart"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/BridgePart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2973,12 +2681,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/interiorBridgeRoom"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/BridgeRoom"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/isMovable"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaboolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3083,24 +2785,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/bridge/2.0/BridgeInstallation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/yearOfConstruction"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemagYear"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/bridge/2.0/yearOfDemolition"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemagYear"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing the thematic and geometric attributes and the associations of bridges. It is an abstract
 
 				type, only its subclasses Bridge and BridgePart can be instantiated. An _AbstractBridge may consist of BridgeParts, which
@@ -3113,7 +2797,7 @@
 
 				inconsistencies occur.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/_BoundarySurface -->
@@ -3163,7 +2847,7 @@
 
 				RoofSurfaces.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/bridge/2.0/_Opening -->
@@ -3205,7 +2889,7 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/BridgeFurniture -->
@@ -3217,7 +2901,7 @@
 
 				neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/Building -->
@@ -3225,25 +2909,13 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/Building">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_AbstractBuilding"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/BuildingFurniture -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/BuildingFurniture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4Geometry"/>
@@ -3256,17 +2928,11 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type for building furnitures. As subclass of _CityObject, a BuildingFurniture inherits all attributes and
 
 				relations, in particular an id, names, external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/BuildingInstallation -->
@@ -3277,18 +2943,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3327,12 +2981,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A BuildingInstallation is a part of a Building which has not the significance of a BuildingPart. Examples
 
 				are stairs, antennas, balconies or small roofs. As subclass of _CityObject, a BuildingInstallation inherits all attributes
@@ -3344,7 +2992,7 @@
 
 				BuildingInstallation object inline, but neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/BuildingPart -->
@@ -3357,7 +3005,7 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/CeilingSurface -->
@@ -3365,7 +3013,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/CeilingSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/ClosureSurface -->
@@ -3373,7 +3021,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/ClosureSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/Door -->
@@ -3392,7 +3040,7 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/FloorSurface -->
@@ -3400,7 +3048,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/FloorSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/GroundSurface -->
@@ -3408,7 +3056,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/GroundSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/IntBuildingInstallation -->
@@ -3423,18 +3071,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4Geometry"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Geometry"/>
             </owl:Restriction>
@@ -3443,12 +3079,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4ImplicitRepresentation"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>An IntBuildingInstallation is an interior part of a Building which has a specific function or semantical
@@ -3464,7 +3094,7 @@
 
 				IntBuildingInstallation object inline, but neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/InteriorWallSurface -->
@@ -3472,7 +3102,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/InteriorWallSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/OuterCeilingSurface -->
@@ -3480,7 +3110,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/OuterCeilingSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/OuterFloorSurface -->
@@ -3488,7 +3118,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/OuterFloorSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/RoofSurface -->
@@ -3496,7 +3126,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/RoofSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/Room -->
@@ -3507,18 +3137,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3545,12 +3163,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/IntBuildingInstallation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A Room is a thematic object for modelling the closed parts inside a building. It has to be closed, if
 
 				necessary by using closure surfaces. The geometry may be either a solid, or a MultiSurface if the boundary is not
@@ -3566,7 +3178,7 @@
 
 				either carry a reference to a Room object or contain a Room object inline, but neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/WallSurface -->
@@ -3574,7 +3186,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/WallSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/Window -->
@@ -3587,217 +3199,13 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/_AbstractBuilding -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/building/2.0/_AbstractBuilding">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_Site"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/address"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/Address"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/boundedBy"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/consistsOfBuildingPart"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/BuildingPart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/interiorBuildingInstallation"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/IntBuildingInstallation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/interiorRoom"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/Room"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod0FootPrint"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod0RoofEdge"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod1MultiSurface"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod1Solid"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod1TerrainIntersection"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod2MultiCurve"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod2MultiSurface"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod2Solid"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod2TerrainIntersection"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod3MultiCurve"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod3MultiSurface"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod3Solid"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod3TerrainIntersection"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4MultiCurve"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4MultiSurface"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4Solid"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/lod4TerrainIntersection"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/measuredHeight"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/LengthType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/outerBuildingInstallation"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/building/2.0/BuildingInstallation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/roofType"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/storeyHeightsAboveGround"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MeasureOrNullListType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/storeyHeightsBelowGround"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MeasureOrNullListType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/storeysAboveGround"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemanonNegativeInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/storeysBelowGround"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemanonNegativeInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/yearOfConstruction"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemagYear"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/building/2.0/yearOfDemolition"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemagYear"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing the thematic and geometric attributes and the associations of buildings. It is an abstract
 
 				type, only its subclasses Building and BuildingPart can be instantiated. An _AbstractBuilding may consist of
@@ -3816,7 +3224,7 @@
 
 				references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/_BoundarySurface -->
@@ -3866,7 +3274,7 @@
 
 				RoofSurfaces. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/building/2.0/_Opening -->
@@ -3908,25 +3316,13 @@
 
 				none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityfurniture/2.0/CityFurniture -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/cityfurniture/2.0/CityFurniture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityfurniture/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityfurniture/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityfurniture/2.0/lod1Geometry"/>
@@ -3999,37 +3395,19 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityfurniture/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing city furnitures, like traffic lights, benches, ... As subclass of _CityObject, a
 
 				CityFurniture inherits all attributes and relations, in particular an id, names, external references, and generalization
 
 				relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/CityObjectGroup -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/cityobjectgroup/2.0/CityObjectGroup">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityobjectgroup/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityobjectgroup/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityobjectgroup/2.0/geometry"/>
@@ -4048,12 +3426,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/cityobjectgroup/2.0/CityObjectGroupParentType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/cityobjectgroup/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment> A group may be used to aggregate arbitrary CityObjects according to some user-defined criteria. Examples
 
 				for groups are the buildings in a specific region, the result of a query, or objects put together for visualization
@@ -4070,7 +3442,7 @@
 
 				may also be contained by another group. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/CityObjectGroupMemberType -->
@@ -4082,7 +3454,7 @@
 
 				inline, but neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/cityobjectgroup/2.0/CityObjectGroupParentType -->
@@ -4098,25 +3470,13 @@
 
 				parent association links to the aggregate, while the parts are given by the group members. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/GenericCityObject -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/GenericCityObject">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/lod0Geometry"/>
@@ -4207,12 +3567,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiCurve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Generic (user defined) city objects may be used to model features which are not covered explicitly by the
 
 				CityGML schema. Generic objects must be used with care; they shall only be used if there is no appropiate thematic class
@@ -4223,7 +3577,7 @@
 
 				and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/_genericAttribute -->
@@ -4238,49 +3592,25 @@
 
 				attribute has a name and a value, which has further subclasses (IntAttrribute, StringAttribute, ...). </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/dateAttribute -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/dateAttribute">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/generics/2.0/_genericAttribute"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemadate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemadate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment></rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/doubleAttribute -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/doubleAttribute">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/generics/2.0/_genericAttribute"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemadouble"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemadouble"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment></rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/genericAttributeSet -->
@@ -4293,109 +3623,49 @@
 
 				attribute set may contain arbitrary generic attributes.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/intAttribute -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/intAttribute">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/generics/2.0/_genericAttribute"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemainteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemainteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment></rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/measureAttribute -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/measureAttribute">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/generics/2.0/_genericAttribute"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/gml/MeasureType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MeasureType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment></rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/stringAttribute -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/stringAttribute">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/generics/2.0/_genericAttribute"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemastring"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemastring"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment></rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/generics/2.0/uriAttribute -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/generics/2.0/uriAttribute">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/generics/2.0/_genericAttribute"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/generics/2.0/value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment></rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/landuse/2.0/LandUse -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/landuse/2.0/LandUse">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/landuse/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/landuse/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/landuse/2.0/lod0MultiSurface"/>
@@ -4426,12 +3696,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/landuse/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing the class for Land Use in all LOD. LandUse objects describe areas of the earth’s surface
 
 				dedicated to a specific land use. The geometry must consist of 3-D surfaces. As subclass of _CityObject, a LandUse
@@ -4440,7 +3704,7 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/BreaklineRelief -->
@@ -4465,7 +3729,7 @@
 
 				an id, names, external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/Elevation -->
@@ -4473,7 +3737,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/relief/2.0/Elevation">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/_Object"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/MassPointRelief -->
@@ -4498,7 +3762,7 @@
 
 				relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/RasterRelief -->
@@ -4523,44 +3787,20 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/ReliefFeature -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/relief/2.0/ReliefFeature">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/lod"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/integerBetween0and4"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/reliefComponent"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/citygml/relief/2.0/_ReliefComponent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/lod"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/integerBetween0and4"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/reliefComponent"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/relief/2.0/_ReliefComponent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing the features of the Digital Terrain Model. As subclass of _CityObject, a ReliefFeature
 
 				inherits all attributes and relations, in particular an id, names, external references, and generalization relations.
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/TINRelief -->
@@ -4585,31 +3825,13 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/relief/2.0/_ReliefComponent -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/relief/2.0/_ReliefComponent">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/lod"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/integerBetween0and4"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/extent"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Polygon"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/relief/2.0/lod"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/integerBetween0and4"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of a ReliefFeature to its components. The _ReliefComponent element must
 
 				either carry a reference to a _ReliefComponent object or contain a _ReliefComponent object inline, but neither both nor
@@ -4621,7 +3843,7 @@
 
 				references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/AbstractAppearance -->
@@ -4636,7 +3858,7 @@
 
 				appearanceProperty. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/Appearance -->
@@ -4656,13 +3878,13 @@
 
 				surface: + means the side with positive orientation, and - the side with negative orientation. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/Color -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/Color"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/Material -->
@@ -4670,47 +3892,11 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/Material">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/AbstractAppearance"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/_Appearance"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/ambientIntensity"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/diffuseColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/emissiveColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/shininess"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/specularColor"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/transparency"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/doubleBetween0and1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Deprecated since CityGML version 0.4.0. Use the concepts of the CityGML Appearance module instead. Adopted
 
 				from X3D standard (http://www.web3d.org/x3d/) </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/SimpleTexture -->
@@ -4718,12 +3904,6 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/SimpleTexture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/AbstractAppearance"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/_Appearance"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/textureCoordinates"/>
-                <owl:someValuesFrom rdf:resource="http://www.opengis.net/gml/doubleList"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/textureMap"/>
@@ -4738,33 +3918,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/textureCoordinates"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/doubleList"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/textureMap"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemaanyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/textureType"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/texturedsurface/2.0/TextureTypeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Deprecated since CityGML version 0.4.0. Use the concepts of the CityGML Appearance module instead. Adopted
 
 				from X3D standard (http://www.web3d.org/x3d/). ToDo: repeat </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/TextureTypeType -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/TextureTypeType"/>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/TexturedSurface -->
@@ -4787,7 +3955,7 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/texturedsurface/2.0/_Appearance -->
@@ -4795,25 +3963,13 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/texturedsurface/2.0/_Appearance">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/_GML"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/AuxiliaryTrafficArea -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/transportation/2.0/AuxiliaryTrafficArea">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/transportation/2.0/_TransportationObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/lod2MultiSurface"/>
@@ -4830,18 +3986,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/lod4MultiSurface"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/surfaceMaterial"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of TransportationComplex to its parts, which are auxiliary traffic areas. The
@@ -4857,7 +4001,7 @@
 
 				external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/Railway -->
@@ -4868,7 +4012,7 @@
 
 				relations, in particular an id, names, external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/Road -->
@@ -4879,7 +4023,7 @@
 
 				relations, in particular an id, names, external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/Square -->
@@ -4892,7 +4036,7 @@
 
 				references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/Track -->
@@ -4905,25 +4049,13 @@
 
 				generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/TrafficArea -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/transportation/2.0/TrafficArea">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/transportation/2.0/_TransportationObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/lod2MultiSurface"/>
@@ -4942,18 +4074,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/surfaceMaterial"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of TransportationComplex to its parts, which are traffic areas. The
 
 				TrafficArea element must either carry a reference to a TrafficArea object or contain a TrafficArea object
@@ -4965,7 +4085,7 @@
 
 				external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/TransportationComplex -->
@@ -4976,18 +4096,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/auxiliaryTrafficArea"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/transportation/2.0/AuxiliaryTrafficArea"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5026,12 +4134,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/transportation/2.0/TrafficArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/transportation/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing transportation complexes, which are aggregated features, e.g. roads, which consist of
 
 				parts (traffic areas, e.g. pedestrian path, and auxiliary traffic areas). As subclass of _CityObject, a
@@ -5040,7 +4142,7 @@
 
 				generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/transportation/2.0/_TransportationObject -->
@@ -5049,7 +4151,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
         <rdfs:comment>Type describing the abstract superclass for transportation objects. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/BridgeFurniture -->
@@ -5057,7 +4159,7 @@
     <owl:Class rdf:about="http://www.opengis.net/citygml/tunnel/2.0/BridgeFurniture">
         <rdfs:comment>Denotes the relation of a hollow space to the furnitures it contains. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/CeilingSurface -->
@@ -5066,7 +4168,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_BoundarySurface"/>
         <rdfs:comment>Mostly horizontal construction that bounds a HollowSpace from above.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/ClosureSurface -->
@@ -5077,7 +4179,7 @@
 
 				real surfaces (e. g. the entrance of an open Tunnel).</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/Door -->
@@ -5086,7 +4188,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_Opening"/>
         <rdfs:comment>Construction for closing an _Opening intended primarily for access or regress or both. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/FloorSurface -->
@@ -5095,7 +4197,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_BoundarySurface"/>
         <rdfs:comment>Mostly horizontal construction that bounds a HollowSpace from below. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/GroundSurface -->
@@ -5106,7 +4208,7 @@
 
 				earth, water, air, ..) from below on the lowest level. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/HollowSpace -->
@@ -5117,18 +4219,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5155,12 +4245,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Area or volume within a Tunnel bounded actually or theoretically </rdfs:comment>
         <rdfs:comment>Denotes the relation of a Tunnel to its internal holllow spaces. The HollowSpace
 
@@ -5168,7 +4252,7 @@
 
 				none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/IntTunnelInstallation -->
@@ -5183,18 +4267,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/lod4Geometry"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Geometry"/>
             </owl:Restriction>
@@ -5203,12 +4275,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/lod4ImplicitRepresentation"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of a Tunnel to its internal installations. The InteriorTunnelInstallation
@@ -5222,7 +4288,7 @@
 
 				in particular an id, names, external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/InteriorWallSurface -->
@@ -5231,7 +4297,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_BoundarySurface"/>
         <rdfs:comment>Mostly vertical construction that bounds a HollowSpace.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/OuterCeilingSurface -->
@@ -5242,7 +4308,7 @@
 
 				(rock, earth, ..) from above.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/OuterFloorSurface -->
@@ -5253,7 +4319,7 @@
 
 				earth, water, air, ..) from below.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/RoofSurface -->
@@ -5264,7 +4330,7 @@
 
 				above.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/Tunnel -->
@@ -5275,25 +4341,13 @@
 
 				6707-1)</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/TunnelFurniture -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/tunnel/2.0/TunnelFurniture">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/2.0/_CityObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/lod4Geometry"/>
@@ -5306,17 +4360,11 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Movable, functional objects, whether useful or ornamental, usually found in a
 
 				HollowSpace</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/TunnelInstallation -->
@@ -5327,18 +4375,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_BoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5377,12 +4413,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Denotes the relation of a Tunnel to its external installations. The TunnelInstallation element
 
 				must either carry a reference to a TunnelInstallation object or contain a TunnelInstallation object inline, but neither
@@ -5394,7 +4424,7 @@
 
 				generic attributes and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/TunnelPart -->
@@ -5410,7 +4440,7 @@
 
 				none.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/WallSurface -->
@@ -5421,7 +4451,7 @@
 
 				earth, water, air, ..)</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/Window -->
@@ -5430,7 +4460,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/_Opening"/>
         <rdfs:comment>Construction for closing an _Opening not intended for access or regress.</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/_AbstractTunnel -->
@@ -5445,20 +4475,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/consistsOfTunnelPart"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/TunnelPart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5569,27 +4587,9 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/TunnelInstallation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/yearOfConstruction"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemagYear"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/tunnel/2.0/yearOfDemolition"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchemagYear"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Abstract super class of the features Tunnel and TunnelPart</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/_BoundarySurface -->
@@ -5631,7 +4631,7 @@
 
 				tunnel is not related to CeilingSurfaces or a room not to RoofSurfaces. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/tunnel/2.0/_Opening -->
@@ -5673,31 +4673,13 @@
 
 				none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/PlantCover -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/vegetation/2.0/PlantCover">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/_VegetationObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/averageHeight"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/LengthType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/lod1MultiSolid"/>
@@ -5746,49 +4728,19 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/MultiSurface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing Plant Covers resp. Biotopes. As subclass of _CityObject, a VegetationObject inherits all
 
 				attributes and relations, in particular an id, names, external references, and generalization relations.
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/SolitaryVegetationObject -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/vegetation/2.0/SolitaryVegetationObject">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/_VegetationObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/crownDiameter"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/LengthType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/height"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/LengthType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/lod1Geometry"/>
@@ -5837,24 +4789,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/2.0/ImplicitGeometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/species"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/trunkDiameter"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/LengthType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/vegetation/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing solitary vegetation objects, e.g., trees. Its geometry is either defined explicitly by a
 
 				GML 3 geometry with absolute coordinates, or in the case of multiple occurences of the same vegetation object, implicitly
@@ -5865,7 +4799,7 @@
 
 				external references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/vegetation/2.0/_VegetationObject -->
@@ -5876,7 +4810,7 @@
 
 				SolitaryVegetationObject or a PlantCover. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/WaterBody -->
@@ -5887,18 +4821,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/boundedBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/_WaterBoundarySurface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/class"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/function"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5949,19 +4871,13 @@
                 <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/Solid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/usage"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing Water Bodies, e.g., lakes, rivers. As subclass of _CityObject, a WaterBody inherits all
 
 				attributes and relations, in particular an id, names, external references, and generalization relations.
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/WaterClosureSurface -->
@@ -5974,7 +4890,7 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/WaterGroundSurface -->
@@ -5987,26 +4903,20 @@
 
 				references, and generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/WaterSurface -->
 
     <owl:Class rdf:about="http://www.opengis.net/citygml/waterbody/2.0/WaterSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/_WaterBoundarySurface"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.opengis.net/citygml/waterbody/2.0/waterLevel"/>
-                <owl:allValuesFrom rdf:resource="http://www.opengis.net/gml/CodeType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Type describing the surface of a water body, which separates the water from the air. As subclass of
 
 				_CityObject, a WaterSurface inherits all attributes and relations, in particular an id, names, external references, and
 
 				generalization relations. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/_WaterBoundarySurface -->
@@ -6040,7 +4950,7 @@
 
 				_WaterBoundarySurface object inline, but neither both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/citygml/waterbody/2.0/_WaterObject -->
@@ -6053,25 +4963,25 @@
 
 			</rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/AbstractFeatureCollectionType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/AbstractFeatureCollectionType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/AbstractFeatureType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/AbstractFeatureType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/AbstractGMLType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/AbstractGMLType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/AbstractGeometricAggregate -->
@@ -6079,13 +4989,13 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/AbstractGeometricAggregate">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/Geometry"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/CodeType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/CodeType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Curve -->
@@ -6093,7 +5003,7 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/Curve">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/GeometricPrimitive"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/GeometricComplex -->
@@ -6112,7 +5022,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/GeometricPrimitive -->
@@ -6120,31 +5030,31 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/GeometricPrimitive">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/Geometry"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Geometry -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/Geometry"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/LengthType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/LengthType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MeasureOrNullListType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/MeasureOrNullListType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MeasureType -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/MeasureType"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MultiCurve -->
@@ -6158,7 +5068,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MultiGeometry -->
@@ -6172,7 +5082,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MultiPoint -->
@@ -6186,7 +5096,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MultiSolid -->
@@ -6200,7 +5110,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/MultiSurface -->
@@ -6214,7 +5124,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/OrientableSurface -->
@@ -6222,7 +5132,7 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/OrientableSurface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/Surface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Point -->
@@ -6230,7 +5140,7 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/Point">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/GeometricPrimitive"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Polygon -->
@@ -6238,7 +5148,7 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/Polygon">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/Surface"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/RectifiedGridCoverage -->
@@ -6250,7 +5160,7 @@
 
 				both nor none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Solid -->
@@ -6258,7 +5168,7 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/Solid">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/GeometricPrimitive"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Surface -->
@@ -6266,7 +5176,7 @@
     <owl:Class rdf:about="http://www.opengis.net/gml/Surface">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/gml/GeometricPrimitive"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/SurfacePatch -->
@@ -6280,7 +5190,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/Triangle -->
@@ -6294,7 +5204,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/TriangulatedSurface -->
@@ -6313,94 +5223,94 @@
 
 				none. </rdfs:comment>
     </owl:Class>
-
+    
 
 
     <!-- http://www.opengis.net/gml/_Feature -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/_Feature"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/_FeatureCollection -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/_FeatureCollection"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/_GML -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/_GML"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/_Object -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/_Object"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/doubleList -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/doubleList"/>
-
+    
 
 
     <!-- http://www.opengis.net/gml/featureMember -->
 
     <owl:Class rdf:about="http://www.opengis.net/gml/featureMember"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemaanyURI -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemaanyURI"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemaboolean -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemaboolean"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemadate -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemadate"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemadouble -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemadouble"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemagYear -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemagYear"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemainteger -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemainteger"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemanonNegativeInteger -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemanonNegativeInteger"/>
-
+    
 
 
     <!-- http://www.w3.org/2001/XMLSchemastring -->
 
     <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemastring"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -6416,3 +5326,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
